@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Kumar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">AK.</a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+            </nav>
+            <button class="hamburger" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm Akash Kumar</h1>
+                    <p class="tagline">Computer Engineering student building clean web projects.</p>
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/profile.jpg" alt="Akash Kumar">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-text">
+                    I am a 2nd-year B.Tech student in Computer Engineering at Shri Vishwakarma Skills University. I have experience working with Python, C, SQL, and HTML. Currently, I am expanding my skill set by learning web development through the CodSoft internship. I'm passionate about building clean, efficient, and user-friendly applications.
+                </p>
+                <div class="resume-wrapper">
+                    <a href="resume.pdf" class="btn btn-outline" download>Download Resume (PDF)</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-container">
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">C</span>
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">HTML</span>
+                    <span class="skill-badge">CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="grid projects-grid">
+                    <div class="card project-card">
+                        <div class="card-img gradient-1"></div>
+                        <div class="card-content">
+                            <h3>Personal Portfolio</h3>
+                            <p>A responsive personal portfolio website showcasing my skills, projects, and contact info. Built with HTML, CSS, and JS.</p>
+                            <a href="../task1-portfolio/index.html" class="btn btn-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <div class="card-img gradient-2"></div>
+                        <div class="card-content">
+                            <h3>Landing Page</h3>
+                            <p>A modern landing page for a fictional fitness app called Stride. Features responsive design and pricing tables.</p>
+                            <a href="../task2-landing-page/index.html" class="btn btn-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <div class="card-img gradient-3"></div>
+                        <div class="card-content">
+                            <h3>Calculator</h3>
+                            <p>A functional calculator web application with a sleek UI. Supports basic arithmetic operations and keyboard input.</p>
+                            <a href="../task3-calculator/index.html" class="btn btn-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out to me for collaborations or just a friendly chat!</p>
+                        <ul class="contact-links">
+                            <li>📧 <a href="mailto:akash19331203@gmail.com">akash19331203@gmail.com</a></li>
+                            <li>📱 <a href="tel:+918168525319">+91 8168525319</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <span class="error-message"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Akash Kumar. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
